@@ -1,6 +1,8 @@
 from scraper import fetch_website_text
 from qualifier import qualify_company
 
+import pandas as pd
+
 
 websites = [
     "https://perific.com",
@@ -40,5 +42,8 @@ for website in websites:
     except Exception as e:
         print(f"Could not qualify {website}: {e}")
 
+df = pd.DataFrame(results)
+df.to_csv("prospects.csv", index=False)
 
 print(f"\nSuccessfully qualified {len(results)} companies.")
+print("Results saved to prospects.csv")

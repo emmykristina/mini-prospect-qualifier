@@ -35,10 +35,11 @@ websites = [
     "https://qurant.se",
 ]
 
-for website in websites:
-    print(f"\n--- {website} ---")
+if __name__ == "__main__":
+    for website in websites:
+        print(f"\n--- {website} ---")
 
-    text = fetch_website_text(website)
+        text = fetch_website_text(website)
 
-    if text:
-        print(text[:500])
+        if text:
+            print(text[:500])

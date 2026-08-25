@@ -30,6 +30,17 @@ def qualify_company(text):
     - a score from 1 to 5 for how likely the company is to buy LinkedIn outreach services
     - a one-line reason for the score
 
+    Score the company based on how suitable it appears for B2B LinkedIn outreach services.
+
+    Consider factors such as:
+    - whether the company sells to other businesses
+    - whether it likely needs to reach decision-makers
+    - whether it has a clearly identifiable target market
+    - whether outbound lead generation could realistically support its sales
+
+    Do not assume that manufacturing or traditional industries are unsuitable
+    for LinkedIn outreach simply because they sell physical products.
+
     Homepage text:
     {text}
     """
