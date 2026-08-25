@@ -31,11 +31,21 @@ cd mini-prospect-qualifier
 
 ### 2. Create and activate a virtual environment
 
-On Windows using Git Bash:
+Create the environment:
 
 ```bash
 python -m venv .venv
+```
+
+Activate it:
+
+```bash
+Windows (Git Bash):
 source .venv/Scripts/activate
+```
+```bash
+macOS/ Linux:
+source .venv/bin/activate
 ```
 
 ### 3. Install dependencies
